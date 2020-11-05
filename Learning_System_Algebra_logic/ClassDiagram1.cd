@@ -1,0 +1,524 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Learning_System_Algebra_logic.App" Collapsed="true">
+    <Position X="50.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>App.xaml.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.MainWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAAAAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>MainWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Command" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAEACAAQAAEAAAAAAAAAAAAAAAAAAgAAAAAA=</HashCode>
+      <FileName>Services\Command.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Manager" Collapsed="true">
+    <Position X="47" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ManagerPage" Collapsed="true">
+    <Position X="48.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABQAIAAAACAAAAAABAAAAgAAAAABAAAAAIAAAQAAAAA=</HashCode>
+      <FileName>Services\ManagerPage.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.PasswordBehavior" Collapsed="true">
+    <Position X="43.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAFAAAAAAAIAAAAAAAAAAAABACAAAAAAAAAAQ=</HashCode>
+      <FileName>Services\PasswordBehavior.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Converts.VisibilityConverter" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAIAAAAAAAAgAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Converts\VisibilityConverter.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.CodeWork" Collapsed="true">
+    <Position X="54" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQACIAAAAAAAgAAQAAAAEAAAAAAAABAAAAAg=</HashCode>
+      <FileName>Data\CodeWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.Group" Collapsed="true">
+    <Position X="48.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAEAAAAAAAEAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\Group.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.ModelDataContext" Collapsed="true">
+    <Position X="52.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAGAAAACAAAAAIAAAAAIAEAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Data\ModelDataContext.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.Student" Collapsed="true">
+    <Position X="50.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAAAAAAAAAEAAAQAAIAAAAAAAAAAAAAAAECAAg=</HashCode>
+      <FileName>Data\Student.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.User" Collapsed="true">
+    <Position X="45.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AABAAEAAAAEAAAAAAAAQAAgAACAAAAACAAAQAAAAAAg=</HashCode>
+      <FileName>Data\User.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.VariantWork" Collapsed="true">
+    <Position X="47" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgCAAAAAAAAACAEAAAAAAIAAACAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Data\VariantWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Data.Work" Collapsed="true">
+    <Position X="50.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAEAAAAAEQAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>Data\Work.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Enums.StateWork" Collapsed="true">
+    <Position X="48.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAAAIAAgAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\StateWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Enums.TypeWork" Collapsed="true">
+    <Position X="43.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\TypeWork.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.AddControlPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\AddControlPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.AddStudentPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\AddStudentPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.AddWorkPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\AddWorkPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.AuthorizationPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\AuthorizationPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ControlPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ControlPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.CreateScheme" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\CreateScheme.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.DeleteGroupPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\DeleteGroupPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.EnterCodeWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\EnterCodeWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ImportFromExcelPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ImportFromExcelPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ManageControlPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ManageControlPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ManageGroupsPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ManageGroupsPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ManageWorksPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ManageWorksPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.Navigation" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAABAAAAgAAAAAAAAAAAgAIAABAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Navigation.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.Practice" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Practice.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.ResultWork" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\ResultWork.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.SelectUserPage" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\SelectUserPage.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Pages.Theory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Pages\Theory.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Properties.Resources" Collapsed="true">
+    <Position X="50.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAAAAAAAIA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Properties.Settings" Collapsed="true">
+    <Position X="45.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAIAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Services.ExportToExcel" Collapsed="true">
+    <Position X="45.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ExportToExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Services.GenerateDocument" Collapsed="true">
+    <Position X="47" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAA=</HashCode>
+      <FileName>Services\GenerateDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Services.ImportFromExcel" Collapsed="true">
+    <Position X="50.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIA=</HashCode>
+      <FileName>Services\ImportFromExcel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Services.PrintDocument" Collapsed="true">
+    <Position X="48.75" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAA=</HashCode>
+      <FileName>Services\PrintDocument.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Services.Security" Collapsed="true">
+    <Position X="54" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\Security.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Styles.Example" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Styles\Example.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Styles.Spinner" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Styles\Spinner.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.AddControlViewModel" Collapsed="true">
+    <Position X="0.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAACUIAIQBAECAAQRCRAAAQAJAAKACQAggUEAEAFAFA=</HashCode>
+      <FileName>ViewModels\AddControlViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.AddGroupViewModel" Collapsed="true">
+    <Position X="7.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAICAAAAQAIAAAACwAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\AddGroupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.AddStudentViewModel" Collapsed="true">
+    <Position X="14" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQgCAMAAABFAAEARAABQAAAAEAAgCAAAIAQACAEEAAg=</HashCode>
+      <FileName>ViewModels\AddStudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.AddWorkViewModel" Collapsed="true">
+    <Position X="18.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>bIASAAiIYAABACQARQAEAAAAAAAAAQAAAAEQIAAAHCA=</HashCode>
+      <FileName>ViewModels\AddWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.AutorizationViewModel" Collapsed="true">
+    <Position X="25.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAQEAAAAAAAAAAAACAIAQAACAAAA=</HashCode>
+      <FileName>ViewModels\AutorizationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.BaseViewModel" Collapsed="true">
+    <Position X="20.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAIAAAAAAAgAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\BaseViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ControlViewModel" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAKACBAAEAAQAJAAAgAAAAAAAAAIAAAAAAAABA=</HashCode>
+      <FileName>ViewModels\ControlViewModel.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DeleteGroupViewModel" Collapsed="true">
+    <Position X="34.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAICQABAQBAAAAEQSAAAAAAAAAEAAAAAACAAAAAiAUA=</HashCode>
+      <FileName>ViewModels\DeleteGroupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.EnterCodeWorkViewModel" Collapsed="true">
+    <Position X="38.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACgAAAAAAiAAAAAAAgAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\EnterCodeWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ImportFromExcelViewModel" Collapsed="true">
+    <Position X="2.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAICAAAAQAAAAAgAYgQAAAAEAAAAAAhAIgACACACQgA=</HashCode>
+      <FileName>ViewModels\ImportFromExcelViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.MainViewModel" Collapsed="true">
+    <Position X="9.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABAAAgAAAAAAAEAAAABAAgAAAAABAAAAIABAAAACAAI=</HashCode>
+      <FileName>ViewModels\MainViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ManageControlViewModel" Collapsed="true">
+    <Position X="16.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAKIZAQAQAQEACQFAAAEBUAABAjgAAgoIEhAAIBCIE=</HashCode>
+      <FileName>ViewModels\ManageControlViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ManageGroupViewModel" Collapsed="true">
+    <Position X="20.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEYAAYMEAAAhBAQNAIAAhAiAABDIgAiAQIJIgCAGIBM=</HashCode>
+      <FileName>ViewModels\ManageGroupViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ManageWorksViewModel" Collapsed="true">
+    <Position X="27.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BIACEASCIRAAACAABAAAEAQAAFASAABAAAABAAAAAAA=</HashCode>
+      <FileName>ViewModels\ManageWorksViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.NavigationViewModel" Collapsed="true">
+    <Position X="32" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ABACAAABAAAAAAAEAAggBAgBAAABAAAAABBEIAAQAAI=</HashCode>
+      <FileName>ViewModels\NavigationViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.PracticeViewModel" Collapsed="true">
+    <Position X="47" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAAQAAAAAAAAABAAAAAAgCAAAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\PracticeViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.ResultWorkViewModel" Collapsed="true">
+    <Position X="36.5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAGAABAhgAAEIAEAJAABgAAAAAAAAAIACAAAAAgAA=</HashCode>
+      <FileName>ViewModels\ResultWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.SelectUserViewModel" Collapsed="true">
+    <Position X="41" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAEAAAAAAAAAAAAAAQAAAAAAAAAAAQAAAAIAIAAAAA=</HashCode>
+      <FileName>ViewModels\SelectUserViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.SettingsViewModel" Collapsed="true">
+    <Position X="5" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\SettingsViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.TheoryViewModel" Collapsed="true">
+    <Position X="11.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAACAAAAAAAQAAAAAAAAAAAAAAAQAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\TheoryViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DataViewModel.ControlWorkAndResultViewModel" Collapsed="true">
+    <Position X="48.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DataViewModel\ControlWorkAndResultViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DataViewModel.ControlWorkViewModel" Collapsed="true">
+    <Position X="23" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACEAAAAAAAIAAgAAgAAYAAAAEAAAAAAAABAAAAAg=</HashCode>
+      <FileName>ViewModels\DataViewModel\ControlWorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DataViewModel.PracticeModel" Collapsed="true">
+    <Position X="29.75" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAIAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DataViewModel\PracticeModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DataViewModel.StudentViewModel" Collapsed="true">
+    <Position X="52.25" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAACAEAAQAAAAAAAAAAQAAAAAAAAAAAAAAAAAAEAAAg=</HashCode>
+      <FileName>ViewModels\DataViewModel\StudentViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.ViewModels.DataViewModel.WorkViewModel" Collapsed="true">
+    <Position X="52.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgSAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ViewModels\DataViewModel\WorkViewModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Learning_System_Algebra_logic.Windows.AddGroupWindow" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Windows\AddGroupWindow.xaml.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Enum Name="Learning_System_Algebra_logic.Enums.ETypeOfLogicalElement" Collapsed="true">
+    <Position X="43.5" Y="7.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAA=</HashCode>
+      <FileName>Enums\ETypeOfLogicalElement.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Delegate Name="Learning_System_Algebra_logic.changePage" Collapsed="true">
+    <Position X="43.5" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ManagerPage.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Delegate Name="Learning_System_Algebra_logic.startLoad" Collapsed="true">
+    <Position X="45.25" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Services\ManagerPage.cs</FileName>
+    </TypeIdentifier>
+  </Delegate>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

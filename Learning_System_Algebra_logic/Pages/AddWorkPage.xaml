@@ -1,0 +1,55 @@
+﻿<Page x:Class="Learning_System_Algebra_logic.Pages.AddWorkPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Learning_System_Algebra_logic.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="AddWorkPage">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="0.2*" />
+            <ColumnDefinition Width="5*" />
+            <ColumnDefinition Width="0.2*" />
+        </Grid.ColumnDefinitions>
+        <Grid Grid.Column="1" Grid.Row="0">
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <TextBlock Style="{StaticResource TextBlockStyle}" Grid.Row="0" Margin="5" Grid.Column="0">Тип задания</TextBlock>
+            <ComboBox ItemsSource="{Binding TypeWorkList}" SelectedItem="{Binding SelectedTypeWork}" Grid.Row="0"
+                      Grid.Column="1" VerticalAlignment="Center" Margin="5" />
+            <TextBlock Style="{StaticResource TextBlockStyle}" Grid.Row="1" Margin="5" Grid.Column="0">Название</TextBlock>
+            <TextBox Style="{StaticResource TextBoxStyle}" Grid.Row="1" Grid.Column="1" Text="{Binding NameWork}"
+                     Margin="5" />
+            <TextBlock Style="{StaticResource TextBlockStyle}" Grid.Row="3" Margin="5" Grid.Column="0">Варианты</TextBlock>
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="2"
+                        Orientation="Horizontal">
+                <Button Style="{StaticResource ButtonStyle}" Command="{Binding AddVariantCommand}"
+                        Content="Добавить вариант" />
+                <Button Style="{StaticResource ButtonStyle}" Command="{Binding DeleteVariantCommand}"
+                        Content="Удалить вариант" />
+            </StackPanel>
+            <ListView Style="{StaticResource BaseStyle}" ItemsSource="{Binding VariantsList}"
+                      SelectedItem="{Binding SelectedVariant}" Grid.Row="3"
+                      Grid.Column="1" />
+            <StackPanel Grid.Column="1" VerticalAlignment="Center" HorizontalAlignment="Center" Grid.Row="4"
+                        Orientation="Horizontal">
+                <Button Style="{StaticResource ButtonStyle}" Command="{Binding AddWorkCommand}"
+                        IsEnabled="{Binding AllowAddWork}"
+                        Content="Сохранить" Margin="5" />
+                <Button Style="{StaticResource ButtonStyle}" Command="{Binding CancelCommand}" Content="Отмена"
+                        Margin="5" />
+            </StackPanel>
+        </Grid>
+    </Grid>
+</Page>

@@ -1,0 +1,82 @@
+﻿<Page x:Class="Learning_System_Algebra_logic.Pages.ControlPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Learning_System_Algebra_logic.Pages"
+      xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ControlPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="0.9*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <DockPanel Grid.Row="1">
+            <Border BorderThickness="2" BorderBrush="#222831" DockPanel.Dock="Top">
+                <StackPanel Orientation="Horizontal" Background="#222831" VerticalAlignment="Top">
+                    <Button Style="{StaticResource ButtonStyle}" Visibility="{Binding IsShowCheck}"
+                            IsEnabled="{Binding IsTest}" Background="#333333"
+                            Command="{Binding Check}">
+                        <TextBlock Background="#333333" Text="Проверить" Foreground="#e3e5e2" />
+                    </Button>
+                    <Button Style="{StaticResource ButtonStyle}" Visibility="{Binding IsShowExit}" Background="#333333"
+                            Command="{Binding ExitCommand}">
+                        <TextBlock Background="#333333" Text="Выход" Foreground="#e3e5e2" />
+                    </Button>
+                    <TextBlock HorizontalAlignment="Right" Background="CadetBlue" Height="15"
+                               VerticalAlignment="Center" />
+                </StackPanel>
+            </Border>
+        </DockPanel>
+        <DockPanel Grid.Row="2">
+            <ScrollViewer VerticalScrollBarVisibility="Auto" DockPanel.Dock="Right" />
+
+            <TabPanel DockPanel.Dock="Left">
+                <ScrollViewer CanContentScroll="True" HorizontalScrollBarVisibility="Auto"
+                              VerticalScrollBarVisibility="Auto" VerticalAlignment="Stretch"
+                              HorizontalAlignment="Stretch">
+                    <Canvas Width="{Binding WidthCanvas, Mode=TwoWay}" Height="{Binding HeightCanvas, Mode=TwoWay}"
+                            ZIndex="-1000" Name="Surface" AllowDrop="True">
+                        <Canvas.Background>
+                            <DrawingBrush Viewport="0,0,15,15" ViewportUnits="Absolute" TileMode="Tile">
+                                <DrawingBrush.Drawing>
+                                    <GeometryDrawing Brush="Black">
+                                        <GeometryDrawing.Geometry>
+                                            <GeometryGroup FillRule="EvenOdd">
+                                                <RectangleGeometry Rect="0,0,50,50" />
+                                                <RectangleGeometry Rect="0,0,49,49" />
+                                            </GeometryGroup>
+                                        </GeometryDrawing.Geometry>
+                                    </GeometryDrawing>
+                                </DrawingBrush.Drawing>
+                            </DrawingBrush>
+                        </Canvas.Background>
+                        <i:Interaction.Triggers>
+                            <i:EventTrigger EventName="MouseLeftButtonDown">
+                                <i:InvokeCommandAction Command="{Binding ClickCanvasCommand}" />
+                            </i:EventTrigger>
+                            <i:EventTrigger EventName="MouseMove">
+                                <i:InvokeCommandAction Command="{Binding MoveMouse}" />
+                            </i:EventTrigger>
+                        </i:Interaction.Triggers>
+                        <Canvas.RenderTransform>
+                            <ScaleTransform ScaleX="{Binding Scale, Mode =OneWay}"
+                                            ScaleY="{Binding Scale, Mode =OneWay}" CenterX="0" CenterY="0" />
+                        </Canvas.RenderTransform>
+                    </Canvas>
+                </ScrollViewer>
+            </TabPanel>
+        </DockPanel>
+        <DockPanel Grid.Row="3">
+            <Border BorderThickness="2" BorderBrush="DodgerBlue" DockPanel.Dock="Top" />
+            <StackPanel Background="#222831" Orientation="Horizontal" Height="20px">
+                <Slider Name="ScaleSlider" Value="{Binding Scale}" Minimum="0.5" SelectionStart="0" Height="30"
+                        IsSelectionRangeEnabled="True" Maximum="2" Width="100px" />
+            </StackPanel>
+        </DockPanel>
+    </Grid>
+</Page>

@@ -1,0 +1,33 @@
+﻿<Window x:Class="Learning_System_Algebra_logic.Windows.AddGroupWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Learning_System_Algebra_logic.Windows"
+        mc:Ignorable="d"
+        Title="Добавить группу" Height="150" Width="300" MinHeight="150" MinWidth="300" MaxHeight="200" MaxWidth="500"
+        Background="#222831">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="105.615" />
+            <ColumnDefinition Width="10.385" />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Top" Text="Название группы" Padding="5"
+                   Margin="5,5,5,0" Grid.Row="0"
+                   Grid.Column="0" Grid.ColumnSpan="2" />
+        <TextBox Style="{StaticResource TextBoxStyle}" Text="{Binding Name}" VerticalAlignment="Top" Padding="5"
+                 Margin="5,5,5,0" Grid.Row="0"
+                 Grid.Column="2" />
+        <StackPanel Grid.Row="1" Grid.Column="0" Grid.ColumnSpan="3" HorizontalAlignment="Center"
+                    VerticalAlignment="Center" Orientation="Horizontal" Margin="76,0">
+            <Button Style="{StaticResource ButtonStyle}" Command="{Binding AddCommand}" Content="Добавить" Padding="5" />
+            <Button Style="{StaticResource ButtonStyle}" Command="{Binding CancelCommand}" Content="Отмена" Padding="5" />
+        </StackPanel>
+    </Grid>
+</Window>

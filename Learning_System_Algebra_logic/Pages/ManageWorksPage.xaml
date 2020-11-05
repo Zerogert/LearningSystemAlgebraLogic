@@ -1,0 +1,58 @@
+﻿<Page x:Class="Learning_System_Algebra_logic.Pages.ManageWorksPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:local="clr-namespace:Learning_System_Algebra_logic.Pages"
+      mc:Ignorable="d"
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="ManageWorksPage">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition  MinWidth="200" MaxWidth="250" />
+        </Grid.ColumnDefinitions>
+        <WrapPanel Grid.Row="0" Grid.Column="0">
+            <Button Style="{StaticResource ButtonStyle}" Margin="5" Command="{Binding AddWorkCommand}"
+                    Content="Добавить задание" Padding="3" />
+            <Button Style="{StaticResource ButtonStyle}" Margin="5" Command="{Binding EditWorkCommand}"
+                    Content="Редактировать задание" Padding="3" />
+            <Button Style="{StaticResource ButtonStyle}" Margin="5" Command="{Binding DeleteWorkCommand}"
+                    Content="Удалить задание" Padding="3" />
+        </WrapPanel>
+        <Grid Grid.Row="1" Grid.Column="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="Auto" />
+            </Grid.RowDefinitions>
+            <TextBlock Style="{StaticResource TextBlockStyle}" Margin="5" Grid.Column="0" Grid.ColumnSpan="2"
+                       Grid.Row="0">
+                Фильтры
+            </TextBlock>
+            <TextBlock Style="{StaticResource TextBlockStyle}" Margin="5" Grid.Column="0" Grid.Row="1">Название</TextBlock>
+            <TextBlock Style="{StaticResource TextBlockStyle}" Margin="5" Grid.Column="0" Grid.Row="2">Тип задания</TextBlock>
+            <TextBox Style="{StaticResource TextBoxStyle}" Margin="5" Grid.Column="1" Grid.Row="1"
+                     Text="{Binding FilterName, UpdateSourceTrigger=PropertyChanged}" VerticalAlignment="Center" />
+            <ComboBox Style="{StaticResource ComboBoxStyle}" SelectedItem="{Binding SelectedTypeWork}"
+                      ItemsSource="{Binding Path=TypeWorkFilterList}"
+                      Margin="5" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" />
+        </Grid>
+        <DataGrid Style="{StaticResource DataGridStyle}" Grid.Row="1" Grid.Column="0" AutoGenerateColumns="False"
+                  SelectedItem="{Binding SelectedWork}"
+                  SelectionMode="Single" ItemsSource="{Binding WorksList}">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Тип задания" Binding="{Binding TypeWork}" />
+                <DataGridTextColumn Header="Название" Binding="{Binding NameWork}" />
+            </DataGrid.Columns>
+        </DataGrid>
+    </Grid>
+</Page>

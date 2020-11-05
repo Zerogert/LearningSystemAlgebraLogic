@@ -1,0 +1,66 @@
+﻿<Window x:Class="Learning_System_Algebra_logic.Pages.ResultWork"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:local="clr-namespace:Learning_System_Algebra_logic.Pages"
+        mc:Ignorable="d"
+        d:DesignHeight="250" d:DesignWidth="400"
+        Width="400" Height="250"
+        Title="Результаты работы" Background="#222831">
+    <Grid VerticalAlignment="Center" Background="#222831" HorizontalAlignment="Center">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="Auto" />
+            <ColumnDefinition Width="Auto" />
+        </Grid.ColumnDefinitions>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="2" Grid.Column="0" Grid.Row="0">
+            Студент:
+        </TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="2" Grid.Column="0" Grid.Row="1">
+            Всего схем:
+        </TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="2" Grid.Column="0" Grid.Row="2">
+            Правильно решенных схем:
+        </TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="2" Grid.Column="0" Grid.Row="3">
+            Процент правильных:
+        </TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Left"
+                   Margin="2" Grid.Column="0" Grid.Row="4">
+            Оценка:
+        </TextBlock>
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   Margin="2" Grid.Column="1" Grid.Row="0"
+                   Text="{Binding NameStudent}" />
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   Margin="2" Grid.Column="1" Grid.Row="1"
+                   Text="{Binding CountSchemes}" />
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   Margin="2" Grid.Column="1" Grid.Row="2"
+                   Text="{Binding CountTrue}" />
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   Margin="2" Grid.Column="1" Grid.Row="3"
+                   Text="{Binding Procent}" />
+        <TextBlock Style="{StaticResource TextBlockStyle}" VerticalAlignment="Center" HorizontalAlignment="Right"
+                   Margin="2" Grid.Column="1" Grid.Row="4"
+                   Text="{Binding Mark}" />
+        <Button Visibility="Collapsed" Grid.Row="5" Grid.Column="0" Command="{Binding ShowErrorsCommand}" Margin="3"
+                Padding="2" VerticalAlignment="Center" HorizontalAlignment="Center" Content="Ошибки" />
+        <Button Style="{StaticResource ButtonStyle}" Click="ButtonBase_OnClick" Grid.Row="5" Grid.Column="1"
+                Command="{Binding ExitCommand}" Content="Выход"
+                Padding="2" />
+    </Grid>
+</Window>
